@@ -4,7 +4,7 @@
 
 A newly logged call can move the primary query's sales stage. The stage follows the length of that call.
 
-Contacting sits between New and Connected.
+CONTACTING sits between NEW and CONNECTED.
 
 ## When it applies
 
@@ -16,16 +16,16 @@ A call longer than 10 seconds counts as a conversation. A call of 10 seconds or 
 
 | Current stage | Call | New stage |
 | --- | --- | --- |
-| New | Longer than 10 seconds | Connected |
-| New | 10 seconds or less | Contacting |
-| Contacting | Longer than 10 seconds | Connected |
-| Contacting | 10 seconds or less | Unchanged |
+| NEW | Longer than 10 seconds | CONNECTED |
+| NEW | 10 seconds or less | CONTACTING |
+| CONTACTING | Longer than 10 seconds | CONNECTED |
+| CONTACTING | 10 seconds or less | Unchanged |
 | Any later stage | Any length | Unchanged |
 
 Examples:
 
-1. The query is New and the call lasts 11 seconds. The stage becomes Connected.
-2. The query is New and the call lasts 10 seconds. The stage becomes Contacting.
-3. The query is Contacting and the call lasts 11 seconds. The stage becomes Connected.
-4. The query is Contacting and the call lasts 4 seconds. The stage stays Contacting.
-5. The query is Proposal and the call lasts 30 seconds. The stage stays Proposal.
+1. The query is NEW and the call lasts 11 seconds. The stage becomes CONNECTED.
+2. The query is NEW and the call lasts 10 seconds. The stage becomes CONTACTING.
+3. The query is CONTACTING and the call lasts 11 seconds. The stage becomes CONNECTED.
+4. The query is CONTACTING and the call lasts 4 seconds. The stage stays CONTACTING.
+5. The query is PROPOSAL and the call lasts 30 seconds. The stage stays PROPOSAL.
