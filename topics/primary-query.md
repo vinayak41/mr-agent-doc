@@ -6,10 +6,10 @@ A contact can have more than one query. One of them is the primary query. A rule
 
 A query is primary when both are true:
 
-1. Its sales stage is not LOST, BOOKED, or CANCELLED.
+1. Its sales stage is not a [closed stage](closed-stage.md).
 2. It has an assigned employee.
 
-A query in LOST, BOOKED, or CANCELLED is not primary. A query with no assigned employee is not primary.
+A query in a closed stage is not primary. A query with no assigned employee is not primary.
 
 If no query meets both, the contact has no primary query.
 

@@ -4,5 +4,6 @@ Business rules for how a query moves through the sales process. Each page states
 
 | Topic | Rule |
 | --- | --- |
-| [Primary query](topics/primary-query.md) | Among a contact's queries, the primary one is not LOST, BOOKED, or CANCELLED, and it has an assigned employee. |
+| [Closed stage](topics/closed-stage.md) | BOOKED, LOST, and CANCELLED are closed stages. A query in a closed stage has left the active sales process. |
+| [Primary query](topics/primary-query.md) | Among a contact's queries, the primary one is not in a closed stage, and it has an assigned employee. |
 | [Call log sets sales stage](topics/call-log-sale-stage.md) | A new call can move the primary query from NEW to CONTACTING or CONNECTED, based on call length. A short call leaves CONTACTING as it is. Any later stage is left unchanged. |
